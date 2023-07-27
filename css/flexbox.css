@@ -51,6 +51,29 @@
     gap: 5px;
 }
 
+.videos__item{
+    height: 303px;
+    width: 280px;
+}
+
+.descricao-video{
+    display: grid;
+    grid-template-areas: "lado topo" "lado baixo" ;
+    grid-gap: 1rem;
+    grid-template-rows: auto;
+}
+
+.descricao-video img{
+    grid-area: lado;
+}
+
+.descricao-video{
+    grid-area: topo;
+}
+
+.descricao-video{
+    grid-area: baixo;    
+}
 @media(min-width:834px){
     .cabecalho__pesquisar__item{
         display: block;

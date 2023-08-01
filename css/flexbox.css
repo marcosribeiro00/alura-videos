@@ -51,27 +51,36 @@
     gap: 5px;
 }
 
+.videos__container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+
 .videos__item{
     height: 303px;
     width: 280px;
+    flex-grow: 1;
 }
 
 .descricao-video{
     display: grid;
     grid-template-areas: "lado topo" "lado baixo" ;
-    grid-gap: 1rem;
+    grid-gap: 0.5rem;
     grid-template-rows: auto;
+    text-align: left;
 }
 
 .descricao-video img{
     grid-area: lado;
 }
 
-.descricao-video{
+.descricao-video h3{
     grid-area: topo;
 }
 
-.descricao-video{
+.descricao-video p{
     grid-area: baixo;    
 }
 @media(min-width:834px){
